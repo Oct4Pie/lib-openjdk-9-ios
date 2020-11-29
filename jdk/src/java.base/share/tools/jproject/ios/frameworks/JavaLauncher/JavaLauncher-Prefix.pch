@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'JavaLauncher' target in the 'JavaLauncher' project
+//
+
+#ifdef __OBJC__
+    
+#endif

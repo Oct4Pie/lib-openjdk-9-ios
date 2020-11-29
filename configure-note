@@ -1,0 +1,33 @@
+bash configure \
+--enable-option-checking=fatal \
+--openjdk-target=aarch64-apple-ios14.3 \
+--disable-warnings-as-errors \
+--enable-headless-only \
+--with-boot-jdk=$JDK_DIR \
+--with-jvm-variants=zero \
+--enable-static-build=yes \
+--with-libffi-include=$LIBFFI_DIR/include \
+--with-libffi-lib=$LIBFFI_DIR/lib \
+--with-extra-cflags="-arch arm64 -O2 -Wno-implicit-function-declaration -Wno-unused-parameter -miphoneos-version-min=11.0 -DOBJC_OLD_DISPATCH_PROTOTYPES=0" \
+--with-extra-cxxflags="-arch arm64 -O2 -Wno-implicit-function-declaration -Wno-unused-parameter -miphoneos-version-min=11.0 -DOBJC_OLD_DISPATCH_PROTOTYPES=0" \
+--with-extra-ldflags="-arch arm64 -O2 -miphoneos-version-min=11.0 -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib" \
+--with-sys-root="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk" \
+--with-tools-dir=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin \
+--with-debug-level=release \
+--disable-precompiled-headers \
+--with-cups-include=$CUPS_DIR \
+--with-build-jdk=$JDK_DIR \
+--prefix=`pwd`/build_arm64 \
+--with-freetype-lib=$FREETYPE_DIR/lib \
+--with-freetype-include=$FREETYPE_DIR/include/freetype2 \
+--with-cups-include=$CUPS_DIR \
+
+JDK_DIR points to a JDK version 9
+LIBFFI_DIR is the bundle built for iOS arm64
+CUPS_DIR is a CUPS bundle (only headers are required – cups/cups.h)
+FREETYPE_DIR is the bundle built for iOS arm64
+
+LIBFFI_DIR and FREETYPE_DIR can be build by either using the target's compiler or setting HOST and ARCH to "arm64"
+iPHONEOS_SDK = `xcrun --sdk iphoneos --show-sdk-path`
+-   export CFLAGS="-isysroot ${iPHONEOS_SDK} -I${iPHONEOS_SDK}/usr/include -miphoneos-version-min=11.0 -arch arm64 "
+-   export LDFLAGS="-isysroot ${SDKDIR} -arch arm64"

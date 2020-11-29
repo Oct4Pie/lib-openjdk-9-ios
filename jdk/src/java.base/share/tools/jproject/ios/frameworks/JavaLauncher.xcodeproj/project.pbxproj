@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		451171AF17738FFF00089F01 /* JavaLauncherUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 451171B017738FFF00089F01 /* Build configuration list for PBXAggregateTarget "JavaLauncherUniversal" */;
+			buildPhases = (
+				451171B31773904900089F01 /* ShellScript */,
+			);
+			dependencies = (
+				456F3F20177CDF73009E071E /* PBXTargetDependency */,
+			);
+			name = JavaLauncherUniversal;
+			productName = JavaLauncherUniversal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4546412417B2BE890008A55E /* javalauncher_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B032DA17B21F4A0000A78C /* javalauncher_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		457EE7201788E61C00312395 /* JavaArgs.m in Sources */ = {isa = PBXBuildFile; fileRef = 457EE71F1788E61C00312395 /* JavaArgs.m */; };
+		457EE7261789B7D000312395 /* JavaArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 457EE71E1788E61C00312395 /* JavaArgs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		457EE7371789BBC000312395 /* JavaArgs.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 457EE71E1788E61C00312395 /* JavaArgs.h */; };
+		45953D35176B5DC200E00426 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45953D34176B5DC200E00426 /* Foundation.framework */; };
+		45953D3A176B5DC200E00426 /* JavaLauncher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45953D39176B5DC200E00426 /* JavaLauncher.h */; };
+		45953D4B176B77B600E00426 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45953D4A176B77B600E00426 /* CoreFoundation.framework */; };
+		45953D62176F7F9900E00426 /* JavaLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 45953D3B176B5DC200E00426 /* JavaLauncher.m */; };
+		45B032D917B21F230000A78C /* javalauncher_api.c in Sources */ = {isa = PBXBuildFile; fileRef = 45B032D817B21F230000A78C /* javalauncher_api.c */; };
+		45CB329D17CA6DCE0034E770 /* javalauncher_api.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B032DA17B21F4A0000A78C /* javalauncher_api.h */; };
+		45FCFA99177235480086E2F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45FCFA97177235480086E2F0 /* InfoPlist.strings */; };
+		45FCFAA01772371A0086E2F0 /* JavaLauncher.h in Headers */ = {isa = PBXBuildFile; fileRef = 45953D39176B5DC200E00426 /* JavaLauncher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45FCFAA2177237220086E2F0 /* jni_md.h in Headers */ = {isa = PBXBuildFile; fileRef = 45953D49176B61C600E00426 /* jni_md.h */; settings = {ATTRIBUTES = (); }; };
+		45FCFAA3177237290086E2F0 /* jni.h in Headers */ = {isa = PBXBuildFile; fileRef = 45953D48176B60C900E00426 /* jni.h */; settings = {ATTRIBUTES = (); }; };
+		45FCFAAF17723F2D0086E2F0 /* libJavaLauncher.a in Resources */ = {isa = PBXBuildFile; fileRef = 45953D31176B5DC200E00426 /* libJavaLauncher.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		456F3F1F177CDF73009E071E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45953D28176B5DC200E00426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45FCFA91177235480086E2F0;
+			remoteInfo = JavaLauncher;
+		};
+		45FCFAA61772392B0086E2F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45953D28176B5DC200E00426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45953D30176B5DC200E00426;
+			remoteInfo = JavaLauncher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45953D2F176B5DC200E00426 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				45CB329D17CA6DCE0034E770 /* javalauncher_api.h in CopyFiles */,
+				457EE7371789BBC000312395 /* JavaArgs.h in CopyFiles */,
+				45953D3A176B5DC200E00426 /* JavaLauncher.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		457EE71E1788E61C00312395 /* JavaArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JavaArgs.h; path = ../../../../../../ios/native/JavaLauncher/JavaArgs.h; sourceTree = "<group>"; };
+		457EE71F1788E61C00312395 /* JavaArgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JavaArgs.m; path = ../../../../../../ios/native/JavaLauncher/JavaArgs.m; sourceTree = "<group>"; };
+		45953D31176B5DC200E00426 /* libJavaLauncher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJavaLauncher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		45953D34176B5DC200E00426 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45953D38176B5DC200E00426 /* JavaLauncher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JavaLauncher-Prefix.pch"; path = "../JavaLauncher/JavaLauncher-Prefix.pch"; sourceTree = "<group>"; };
+		45953D39176B5DC200E00426 /* JavaLauncher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JavaLauncher.h; path = ../../../../../../ios/native/JavaLauncher/JavaLauncher.h; sourceTree = "<group>"; };
+		45953D3B176B5DC200E00426 /* JavaLauncher.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; name = JavaLauncher.m; path = ../../../../../../ios/native/JavaLauncher/JavaLauncher.m; sourceTree = "<group>"; };
+		45953D48176B60C900E00426 /* jni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jni.h; path = ../../../../../../../java.base/share/native/include/jni.h; sourceTree = SOURCE_ROOT; };
+		45953D49176B61C600E00426 /* jni_md.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jni_md.h; path = ../../../../../../../java.base/unix/native/include/jni_md.h; sourceTree = SOURCE_ROOT; };
+		45953D4A176B77B600E00426 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		45B032D817B21F230000A78C /* javalauncher_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = javalauncher_api.c; path = ../../../../../native/javalauncher_api/javalauncher_api.c; sourceTree = "<group>"; };
+		45B032DA17B21F4A0000A78C /* javalauncher_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = javalauncher_api.h; path = ../../../../../native/javalauncher_api/javalauncher_api.h; sourceTree = "<group>"; };
+		45FCFA92177235480086E2F0 /* JavaLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JavaLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45FCFA96177235480086E2F0 /* JavaLauncher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JavaLauncher-Info.plist"; sourceTree = "<group>"; };
+		45FCFA98177235480086E2F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45FCFA9A177235480086E2F0 /* JavaLauncher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JavaLauncher-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45953D2E176B5DC200E00426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45953D4B176B77B600E00426 /* CoreFoundation.framework in Frameworks */,
+				45953D35176B5DC200E00426 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45953D26176B5DC200E00426 = {
+			isa = PBXGroup;
+			children = (
+				45953D36176B5DC200E00426 /* JavaLauncherLib */,
+				45FCFA94177235480086E2F0 /* JavaLauncher */,
+				45953D33176B5DC200E00426 /* Frameworks */,
+				45953D32176B5DC200E00426 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45953D32176B5DC200E00426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45953D31176B5DC200E00426 /* libJavaLauncher.a */,
+				45FCFA92177235480086E2F0 /* JavaLauncher.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45953D33176B5DC200E00426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45953D4A176B77B600E00426 /* CoreFoundation.framework */,
+				45953D34176B5DC200E00426 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45953D36176B5DC200E00426 /* JavaLauncherLib */ = {
+			isa = PBXGroup;
+			children = (
+				45B032DA17B21F4A0000A78C /* javalauncher_api.h */,
+				45B032D817B21F230000A78C /* javalauncher_api.c */,
+				457EE71E1788E61C00312395 /* JavaArgs.h */,
+				457EE71F1788E61C00312395 /* JavaArgs.m */,
+				45953D39176B5DC200E00426 /* JavaLauncher.h */,
+				45953D3B176B5DC200E00426 /* JavaLauncher.m */,
+				45953D37176B5DC200E00426 /* Supporting Files */,
+				45953D48176B60C900E00426 /* jni.h */,
+				45953D49176B61C600E00426 /* jni_md.h */,
+			);
+			name = JavaLauncherLib;
+			path = JavaLauncher;
+			sourceTree = "<group>";
+		};
+		45953D37176B5DC200E00426 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45953D38176B5DC200E00426 /* JavaLauncher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45FCFA94177235480086E2F0 /* JavaLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				45FCFA95177235480086E2F0 /* Supporting Files */,
+			);
+			path = JavaLauncher;
+			sourceTree = "<group>";
+		};
+		45FCFA95177235480086E2F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45FCFA96177235480086E2F0 /* JavaLauncher-Info.plist */,
+				45FCFA97177235480086E2F0 /* InfoPlist.strings */,
+				45FCFA9A177235480086E2F0 /* JavaLauncher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		45FCFA9F177236E50086E2F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FCFAA01772371A0086E2F0 /* JavaLauncher.h in Headers */,
+				457EE7261789B7D000312395 /* JavaArgs.h in Headers */,
+				4546412417B2BE890008A55E /* javalauncher_api.h in Headers */,
+				45FCFAA3177237290086E2F0 /* jni.h in Headers */,
+				45FCFAA2177237220086E2F0 /* jni_md.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		45953D30176B5DC200E00426 /* JavaLauncherLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45953D3F176B5DC200E00426 /* Build configuration list for PBXNativeTarget "JavaLauncherLib" */;
+			buildPhases = (
+				45953D2D176B5DC200E00426 /* Sources */,
+				45953D2E176B5DC200E00426 /* Frameworks */,
+				45953D2F176B5DC200E00426 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JavaLauncherLib;
+			productName = JavaLauncher;
+			productReference = 45953D31176B5DC200E00426 /* libJavaLauncher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		45FCFA91177235480086E2F0 /* JavaLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45FCFA9D177235480086E2F0 /* Build configuration list for PBXNativeTarget "JavaLauncher" */;
+			buildPhases = (
+				45FCFA9F177236E50086E2F0 /* Headers */,
+				45FCFA90177235480086E2F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45FCFAA71772392B0086E2F0 /* PBXTargetDependency */,
+			);
+			name = JavaLauncher;
+			productName = JavaLauncher;
+			productReference = 45FCFA92177235480086E2F0 /* JavaLauncher.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45953D28176B5DC200E00426 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Oracle;
+			};
+			buildConfigurationList = 45953D2B176B5DC200E00426 /* Build configuration list for PBXProject "JavaLauncher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 45953D26176B5DC200E00426;
+			productRefGroup = 45953D32176B5DC200E00426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45953D30176B5DC200E00426 /* JavaLauncherLib */,
+				45FCFA91177235480086E2F0 /* JavaLauncher */,
+				451171AF17738FFF00089F01 /* JavaLauncherUniversal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45FCFA90177235480086E2F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FCFAAF17723F2D0086E2F0 /* libJavaLauncher.a in Resources */,
+				45FCFA99177235480086E2F0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		451171B31773904900089F01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# This project is called during the jdk build via xcodebuild\n# from jdk/make/closed/embedded/Images.gmk with\n# JDK_OUTPUTDIR and EMBEDDED_IMAGE_DIR set\n# When building in Xcode, the standard build locations are used.\n\n# Sets the target folders and the final framework product.\nFMK_NAME=JavaLauncher\n\n# Where built artifacts reside\nif [ ! -z $FMWK_OUTPUTDIR ]; then\nSYMROOTDIR=$FMWK_OUTPUTDIR/$FMK_NAME\nOBJROOTDIR=$SYMROOTDIR/build\nelse\nSYMROOTDIR=$SYMROOT\nOBJROOTDIR=$OBJROOT\nfi\n\n# Building both architectures.\nxcodebuild -project JavaLauncher.xcodeproj -configuration \"$CONFIGURATION\" -target \"${FMK_NAME}\" -sdk iphoneos \\\n    SYMROOT=$SYMROOTDIR OBJROOT=$OBJROOTDIR\nxcodebuild -project JavaLauncher.xcodeproj -configuration \"$CONFIGURATION\" -target \"${FMK_NAME}\" -sdk iphonesimulator \\\n    SYMROOT=$SYMROOTDIR OBJROOT=$OBJROOTDIR\n\nFMKDIR=$SRCROOT/${FMK_NAME}.framework\n# if were doing a JDK build then create the framework hierarchy in the\n# jdk output image area and create a universal archive\nif [ ! -z $FMWK_OUTPUTDIR ]; then\n    FMKDIR=$SYMROOTDIR/${FMK_NAME}.framework\nfi\n\n# Need to construct the framework directory structure\nrm -rf $FMKDIR\nmkdir -p $FMKDIR\n# copy over the headers and other files from one of the configurations\ncp -r $SYMROOTDIR/${CONFIGURATION}-iphoneos/${FMK_NAME}.framework/Headers \\\n        $SYMROOTDIR/${CONFIGURATION}-iphoneos/${FMK_NAME}.framework/en.lproj \\\n        $SYMROOTDIR/${CONFIGURATION}-iphoneos/${FMK_NAME}.framework/Info.plist \\\n        $FMKDIR\n    \n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n# The final archive must be called $FMK_NAME\nlipo -create \"$SYMROOTDIR/${CONFIGURATION}-iphoneos/${FMK_NAME}.framework/lib${FMK_NAME}.a\" \\\n            \"$SYMROOTDIR/${CONFIGURATION}-iphonesimulator/${FMK_NAME}.framework/lib${FMK_NAME}.a\" \\\n            -output \"$FMKDIR/$FMK_NAME\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45953D2D176B5DC200E00426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45953D62176F7F9900E00426 /* JavaLauncher.m in Sources */,
+				457EE7201788E61C00312395 /* JavaArgs.m in Sources */,
+				45B032D917B21F230000A78C /* javalauncher_api.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		456F3F20177CDF73009E071E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45FCFA91177235480086E2F0 /* JavaLauncher */;
+			targetProxy = 456F3F1F177CDF73009E071E /* PBXContainerItemProxy */;
+		};
+		45FCFAA71772392B0086E2F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45953D30176B5DC200E00426 /* JavaLauncherLib */;
+			targetProxy = 45FCFAA61772392B0086E2F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45FCFA97177235480086E2F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45FCFA98177235480086E2F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		451171B117738FFF00089F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		451171B217738FFF00089F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		45953D3D176B5DC200E00426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXPORTED_SYMBOLS_FILE = exported_symbols;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DSTATIC_BUILD=true";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 x86_64 armv7 i386";
+			};
+			name = Debug;
+		};
+		45953D3E176B5DC200E00426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				EXPORTED_SYMBOLS_FILE = exported_symbols;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DSTATIC_BUILD=true";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 x86_64 armv7 i386";
+			};
+			name = Release;
+		};
+		45953D40176B5DC200E00426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/JavaLauncher.dst;
+				EXPORTED_SYMBOLS_FILE = exported_symbols;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JavaLauncher/JavaLauncher-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JavaLauncher;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 x86_64 armv7 i386";
+			};
+			name = Debug;
+		};
+		45953D41176B5DC200E00426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/JavaLauncher.dst;
+				EXPORTED_SYMBOLS_FILE = exported_symbols;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JavaLauncher/JavaLauncher-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JavaLauncher;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 x86_64 armv7 i386";
+			};
+			name = Release;
+		};
+		45FCFA9B177235480086E2F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				EXPORTED_SYMBOLS_FILE = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JavaLauncher/JavaLauncher-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "JavaLauncher/JavaLauncher-Info.plist";
+				INFOPLIST_OUTPUT_FORMAT = XML;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		45FCFA9C177235480086E2F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXPORTED_SYMBOLS_FILE = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JavaLauncher/JavaLauncher-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "JavaLauncher/JavaLauncher-Info.plist";
+				INFOPLIST_OUTPUT_FORMAT = XML;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		451171B017738FFF00089F01 /* Build configuration list for PBXAggregateTarget "JavaLauncherUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451171B117738FFF00089F01 /* Debug */,
+				451171B217738FFF00089F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45953D2B176B5DC200E00426 /* Build configuration list for PBXProject "JavaLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45953D3D176B5DC200E00426 /* Debug */,
+				45953D3E176B5DC200E00426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45953D3F176B5DC200E00426 /* Build configuration list for PBXNativeTarget "JavaLauncherLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45953D40176B5DC200E00426 /* Debug */,
+				45953D41176B5DC200E00426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45FCFA9D177235480086E2F0 /* Build configuration list for PBXNativeTarget "JavaLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45FCFA9B177235480086E2F0 /* Debug */,
+				45FCFA9C177235480086E2F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45953D28176B5DC200E00426 /* Project object */;
+}
